@@ -14,7 +14,7 @@ type Props = PropsWithChildren<{
 /** Cartão com borda colorida usado para destacar informações. */
 export function InfoCard({ title, caption, accentColor = OW_ORANGE, children }: Props) {
   return (
-    <View style={[styles.card, { borderLeftColor: accentColor }]}>
+    <View style={ styles.card }>
       <ThemedText type="defaultSemiBold" style={{ color: accentColor }}>
         {title}
       </ThemedText>
@@ -37,9 +37,6 @@ export function Bullet({ children }: PropsWithChildren) {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: Palette.surface,
-    borderWidth: 1,
-    borderColor: Palette.border,
-    borderLeftWidth: 4,
     borderRadius: 10,
     padding: 14,
     gap: 6,

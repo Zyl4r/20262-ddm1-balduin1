@@ -5,7 +5,7 @@ import { OwHeader } from '@/components/overwatch/ow-header';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { MAP_HIGHLIGHTS, MAPS, OW_DARK, OW_ORANGE } from '@/constants/overwatch';
+import { MAP_HIGHLIGHTS, MAPS, OW_DARK } from '@/constants/overwatch';
 
 export default function MapasScreen() {
   const total = MAPS.reduce((sum, group) => sum + group.maps.length, 0);
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
   },
   chip: {
     borderWidth: 1,
-    borderColor: OW_ORANGE,
-    backgroundColor: 'rgba(249, 158, 26, 0.08)',
+    borderColor: OW_DARK,
+    backgroundColor: '#293647',
     borderRadius: 999,
     paddingHorizontal: 12,
     paddingVertical: 4,
