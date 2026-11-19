@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
   chip: {
     borderWidth: 1,
     borderColor: OW_ORANGE,
+    backgroundColor: 'rgba(249, 158, 26, 0.08)',
     borderRadius: 999,
     paddingHorizontal: 12,
     paddingVertical: 4,

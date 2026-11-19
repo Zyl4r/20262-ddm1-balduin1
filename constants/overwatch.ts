@@ -3,8 +3,10 @@
  * Mapas, Modos e Competitivo.
  */
 
-export const OW_ORANGE = '#F99E1A';
-export const OW_DARK = '#1B2838';
+import { Palette } from '@/constants/theme';
+
+export const OW_ORANGE = Palette.orange;
+export const OW_DARK = Palette.navyHeader;
 
 export type Role = 'Tanque' | 'Dano' | 'Suporte';
 
@@ -24,7 +26,7 @@ export type RoleGroup = {
 export const HEROES: RoleGroup[] = [
   {
     role: 'Tanque',
-    color: '#4A90D9',
+    color: '#4FA3E0',
     summary:
       'Linha de frente do time. Absorvem dano, criam espaço e protegem os aliados. No 5v5 cada equipe tem apenas um tanque.',
     passive: 'Reduz o acúmulo de carga de ultimate gerado nos inimigos e diminui o recuo (knockback) recebido.',
@@ -46,7 +48,7 @@ export const HEROES: RoleGroup[] = [
   },
   {
     role: 'Dano',
-    color: '#E0533D',
+    color: '#E8604C',
     summary:
       'Responsáveis por eliminar inimigos. Há heróis de longo alcance, flanqueadores e especialistas em área. Cada equipe tem dois heróis de dano.',
     passive: 'Causar dano reduz a cura recebida pelo alvo por um curto período.',
@@ -74,7 +76,7 @@ export const HEROES: RoleGroup[] = [
   },
   {
     role: 'Suporte',
-    color: '#3DBE7A',
+    color: '#4CC9A0',
     summary:
       'Mantêm o time vivo com cura, proteções e bônus, além de contribuírem com dano e utilidade. Cada equipe tem dois suportes.',
     passive: 'Regeneram vida automaticamente depois de alguns segundos sem sofrer dano.',

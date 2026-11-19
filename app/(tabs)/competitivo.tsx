@@ -6,7 +6,8 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Collapsible } from '@/components/ui/collapsible';
-import { COMPETITIVE_TOPICS, OW_DARK, RANKS } from '@/constants/overwatch';
+import { COMPETITIVE_TOPICS, OW_DARK, OW_ORANGE, RANKS } from '@/constants/overwatch';
+import { Palette } from '@/constants/theme';
 
 export default function CompetitivoScreen() {
   return (
@@ -76,10 +77,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   top500: {
-    backgroundColor: '#F99E1A',
+    backgroundColor: OW_ORANGE,
   },
   rankNumber: {
-    color: '#111111',
+    color: Palette.navy,
     fontWeight: 'bold',
     fontSize: 14,
     lineHeight: 18,
@@ -87,6 +88,6 @@ const styles = StyleSheet.create({
   divisions: {
     marginLeft: 'auto',
     fontSize: 13,
-    opacity: 0.7,
+    color: Palette.textMuted,
   },
 });

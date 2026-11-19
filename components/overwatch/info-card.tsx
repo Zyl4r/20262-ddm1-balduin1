@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { OW_ORANGE } from '@/constants/overwatch';
+import { Palette } from '@/constants/theme';
 
 type Props = PropsWithChildren<{
   title: string;
@@ -35,7 +36,9 @@ export function Bullet({ children }: PropsWithChildren) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: 'rgba(255, 255, 255, 0.06)',
+    backgroundColor: Palette.surface,
+    borderWidth: 1,
+    borderColor: Palette.border,
     borderLeftWidth: 4,
     borderRadius: 10,
     padding: 14,
@@ -44,7 +47,7 @@ const styles = StyleSheet.create({
   caption: {
     fontSize: 13,
     lineHeight: 18,
-    opacity: 0.75,
+    color: Palette.textMuted,
   },
   bulletRow: {
     flexDirection: 'row',

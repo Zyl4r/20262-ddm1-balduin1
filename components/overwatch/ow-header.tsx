@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { IconSymbol, type IconSymbolName } from '@/components/ui/icon-symbol';
 import { OW_DARK, OW_ORANGE } from '@/constants/overwatch';
+import { Palette } from '@/constants/theme';
 
 type Props = {
   icon: IconSymbolName;
@@ -47,12 +48,12 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   title: {
-    color: '#FFFFFF',
+    color: Palette.text,
     fontSize: 30,
     fontWeight: 'bold',
   },
   subtitle: {
-    color: '#C9D3DD',
+    color: Palette.textMuted,
     fontSize: 14,
     textAlign: 'center',
   },

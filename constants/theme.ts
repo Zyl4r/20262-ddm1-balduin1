@@ -5,28 +5,38 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#12c75d';
-const tintColorDark = '#fff';
+/** Paleta inspirada na interface de Overwatch: azul-marinho, laranja e azul claro. */
+export const Palette = {
+  orange: '#F99E1A',
+  orangeSoft: '#FFB547',
+  blue: '#4FC1E9',
+  navy: '#0F1620',
+  navyHeader: '#1A2433',
+  surface: '#18222F',
+  border: '#2A3647',
+  tabBar: '#0B1119',
+  text: '#E9EEF4',
+  textMuted: '#9AA8B8',
+  icon: '#6E7C8C',
+};
 
+const theme = {
+  text: Palette.text,
+  textMuted: Palette.textMuted,
+  background: Palette.navy,
+  surface: Palette.surface,
+  border: Palette.border,
+  tint: Palette.orange,
+  icon: Palette.icon,
+  tabIconDefault: Palette.icon,
+  tabIconSelected: Palette.orange,
+  tabBgColor: Palette.tabBar,
+};
+
+// O app usa o mesmo visual escuro em ambos os esquemas de cor.
 export const Colors = {
-  light: {
-    text: '#b2f0bc',
-    background: '#042e02',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-    tabBgColor: '#162518'
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#042e02',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-    tabBgColor: '#162518'
-  },
+  light: theme,
+  dark: theme,
 };
 
 export const Fonts = Platform.select({
