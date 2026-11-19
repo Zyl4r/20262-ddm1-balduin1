@@ -22,6 +22,8 @@ const MAPPING = {
   'map.fill': 'map',
   'gamecontroller.fill': 'sports-esports',
   'trophy.fill': 'emoji-events',
+  'lock.fill': 'lock',
+  'delete.left.fill': 'backspace',
 } as IconMapping;
 
 /**
